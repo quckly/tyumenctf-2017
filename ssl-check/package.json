@@ -1,0 +1,12 @@
+{
+  "name": "ssl-check",
+  "version": "0.0.0",
+  "description": "ssl-check",
+  "main": "server.js",
+  "author": {
+    "name": "quckly"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

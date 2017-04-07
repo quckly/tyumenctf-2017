@@ -1,0 +1,53 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 17 (0x11)
+    Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=Hacker_CA, O=TyumenStateUniversity_Hacker_Dep.
+        Validity
+            Not Before: Apr  7 18:21:25 2017 GMT
+            Not After : Apr  7 18:21:25 2018 GMT
+        Subject: CN=Web_Master
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (384 bit)
+                pub:
+                    04:8b:01:1f:76:b5:f0:86:0e:52:7a:c0:a9:3f:90:
+                    d8:0f:a7:0c:0c:3d:a0:ca:58:8c:45:da:ab:d2:45:
+                    62:b5:00:8f:5b:85:cc:a0:3b:ef:4b:99:48:a7:65:
+                    1c:1a:ad:97:59:1f:7d:82:42:21:19:08:12:99:dd:
+                    c1:05:79:11:5c:aa:59:7f:11:94:3f:a5:b6:ed:5b:
+                    eb:ae:fa:90:38:4a:13:2d:bf:85:ef:e8:4f:39:00:
+                    94:99:cd:76:4e:a1:4d
+                ASN1 OID: secp384r1
+                NIST CURVE: P-384
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                OpenSSL Generated Certificate
+            X509v3 Subject Key Identifier: 
+                83:AC:55:C9:F6:54:3C:72:E1:4E:72:D4:2C:4E:DA:14:4C:C3:57:D7
+            X509v3 Authority Key Identifier: 
+                keyid:9F:89:49:CD:F4:6C:1D:CB:18:84:B0:EE:54:F6:40:E8:69:8F:F1:12
+
+    Signature Algorithm: ecdsa-with-SHA256
+         30:65:02:31:00:b4:60:b2:b9:e2:5f:bd:20:9e:cc:9a:5b:2d:
+         d0:89:85:f5:b6:c2:d0:bc:9c:ac:2e:2e:02:fe:06:22:92:60:
+         f2:7e:74:0b:2e:7d:61:19:0e:2f:9f:fa:90:8b:27:b8:b0:02:
+         30:41:ea:13:c5:d0:da:87:08:dd:02:cc:d4:89:e2:75:cc:13:
+         3a:87:18:31:f9:a5:1c:f8:9c:69:9e:0c:8a:ff:19:35:eb:86:
+         1f:53:aa:17:49:7b:63:8b:92:de:d2:e0:b9
+-----BEGIN CERTIFICATE-----
+MIIB/DCCAYKgAwIBAgIBETAKBggqhkjOPQQDAjBAMRIwEAYDVQQDDAlIYWNrZXJf
+Q0ExKjAoBgNVBAoMIVR5dW1lblN0YXRlVW5pdmVyc2l0eV9IYWNrZXJfRGVwLjAe
+Fw0xNzA0MDcxODIxMjVaFw0xODA0MDcxODIxMjVaMBUxEzARBgNVBAMMCldlYl9N
+YXN0ZXIwdjAQBgcqhkjOPQIBBgUrgQQAIgNiAASLAR92tfCGDlJ6wKk/kNgPpwwM
+PaDKWIxF2qvSRWK1AI9bhcygO+9LmUinZRwarZdZH32CQiEZCBKZ3cEFeRFcqll/
+EZQ/pbbtW+uu+pA4ShMtv4Xv6E85AJSZzXZOoU2jezB5MAkGA1UdEwQCMAAwLAYJ
+YIZIAYb4QgENBB8WHU9wZW5TU0wgR2VuZXJhdGVkIENlcnRpZmljYXRlMB0GA1Ud
+DgQWBBSDrFXJ9lQ8cuFOctQsTtoUTMNX1zAfBgNVHSMEGDAWgBSfiUnN9GwdyxiE
+sO5U9kDoaY/xEjAKBggqhkjOPQQDAgNoADBlAjEAtGCyueJfvSCezJpbLdCJhfW2
+wtC8nKwuLgL+BiKSYPJ+dAsufWEZDi+f+pCLJ7iwAjBB6hPF0NqHCN0CzNSJ4nXM
+EzqHGDH5pRz4nGmeDIr/GTXrhh9TqhdJe2OLkt7S4Lk=
+-----END CERTIFICATE-----
