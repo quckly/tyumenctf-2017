@@ -23,7 +23,7 @@ app.get('/', function (req, res) {
 
     res.status(200);
     if (req.socket.getPeerCertificate().subject.CN === "Admin") {
-        res.end("Flag is flag{}");
+        res.end("Flag is NoirCTF{cl13n7_c3rtzz_s0O_c00l}");
     } else {
         res.end("Hello, " + req.socket.getPeerCertificate().subject.CN + ". Only Admin can view private data. Go away!\n");
     }

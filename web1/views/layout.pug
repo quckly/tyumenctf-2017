@@ -1,0 +1,21 @@
+﻿doctype html
+html(lang='en')
+  head
+    title My super cool site
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
+    link(rel='stylesheet', href='/stylesheets/main.css')
+  body
+    nav.navbar.navbar-toggleable-md.navbar-inverse.bg-inverse.fixed-top
+        button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+        |  
+        a.navbar-brand(href='/') My site
+        #navbarsExampleDefault.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+            li.nav-item.active
+            a.nav-link(href='/') Home
+            li.nav-item
+            a.nav-link(href='/register') Register
+            li.nav-item
+            a.nav-link(href='/login') Login
+    block content

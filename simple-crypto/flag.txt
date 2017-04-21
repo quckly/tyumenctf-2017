@@ -1,0 +1,2 @@
+You have decrypted this!
+Flag is NoirCTF{br41n_h0rd_cryp70gr4phy}
