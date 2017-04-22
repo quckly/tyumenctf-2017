@@ -14,7 +14,7 @@ def stream(ch):
 generator()
 
 read_data = None
-with open('flag.txt', 'r') as f:
+with open('message.in', 'r') as f:
     read_data = f.read()
     
 write_data = []

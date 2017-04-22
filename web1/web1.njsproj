@@ -44,6 +44,8 @@
     <Content Include="public\stylesheets\main.css" />
     <Content Include="README.md" />
     <Content Include="views\error.pug" />
+    <Content Include="views\flag.pug" />
+    <Content Include="views\register.pug" />
     <Content Include="views\login.pug" />
     <Content Include="views\index.pug" />
     <Content Include="views\layout.pug" />

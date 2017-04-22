@@ -3,6 +3,7 @@ import path = require('path');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
 const uuidV1 = require('uuid/v1');
+var CRC32 = require('crc-32');
 
 var app = express();
 
@@ -21,6 +22,10 @@ app.use((req, res, next) => {
         let token: string = req.cookies['token'];
         if (tokens[token] !== undefined) {
             req['user'] = tokens[token];
+
+            if (CRC32.str(req['user'].name + req['user'].password) === 0x3CC34518) {
+                req['user'].role = "Admin";
+            }
         }
     }
 
@@ -35,7 +40,7 @@ app.get('/', (req: express.Request, res: express.Response) => {
         return res.sendStatus(302);
     }
 
-    return res.render('index', req['user']);
+    return res.render('index', { user: req['user'] });
 });
 
 app.get('/register', (req: express.Request, res: express.Response) => {
@@ -55,16 +60,15 @@ app.post('/register', urlencodedParser, (req: express.Request, res: express.Resp
     users[req.body.username] = req.body.password;
     
     res.location('/login');
-    return res.sendStatus(200);
+    return res.sendStatus(302);
 });
 
 app.get('/flag', (req: express.Request, res: express.Response) => {
-    if (!req['user'] || !(req['user'].role !== 'Admin')) {
-        res.location('/login');
-        return res.sendStatus(302);
+    if (!req['user'] || (req['user'].role !== 'Admin')) {
+        return res.sendStatus(403);
     }
 
-    return res.render('flag', req['user']);
+    return res.render('flag', { user: req['user'] });
 });
 
 app.get('/login', (req: express.Request, res: express.Response) => {
@@ -89,7 +93,7 @@ app.post('/login', urlencodedParser, (req: express.Request, res: express.Respons
     res.cookie("token", uuid);
     tokens[uuid] = { name: req.body.username, password: req.body.password };
     res.location('/');
-    return res.sendStatus(200);
+    return res.sendStatus(302);
 });
 
 app.use((req, res, next) => {
